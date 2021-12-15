@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+/*header*/
+
+header{
+    height: 60px;
+    box-shadow:  0px 7px 9px rgba(0, 0, 0, 0.25);
+}
+.logo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/*packege*/
+.pack{
+    width: 600px;
+    margin: 200px auto;     
+    background: linear-gradient( #fff , #fff )padding-box,
+    linear-gradient(90deg, #C20023 4%, #8000FF 100%)border-box;
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 15px;
+}
+.title{
+    max-width: 550px;
+}
+.name{
+    font-size: 45px;
+    line-height: 20px;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+.desc{
+    color: rgba(132, 132, 132, 1);
+    padding-left: 15px;
+}
+.parag{
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.btn{
+   /* margin-right: 50px;*/
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    background: linear-gradient(93.36deg, #C20023 4%, #8000FF 100%);
+    padding: 8px 12px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    margin-right: 50px;
+    margin-bottom: 80px;
+    
+}
+.btn:hover{
+    color: #fff;
+
+}
+.basic_info{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+
+}
+.data-time{
+    padding-left: 20px;
+}
+/* media*/
+@media(max-width:720px){
+    .container{
+        max-width: 540px;
+    }
+    .pack{
+        max-width: 350px;
+        /*height: 400px;*/
+    }
+    .name{
+        font-size: 35px;
+        line-height: 30px;
+    }
+    .info{
+        margin-top: 50px;
+
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn_pack{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .basic_info{
+        margin-right: 20px;
+    }
+    .desc{
+        padding-right: 15px;
+    }
+    .btn{
+        margin-right: 0;
+    }
+    
+    
+}
+
+
+@media(max-width:350px){
+    .container{
+        max-width: 100%;
+    }
+    .pack{
+       max-width: 290px;
+      /*height: 350px;*/
+    }
+    .name{
+        font-size: 35px;
+        line-height: 30px;
+    }
+    .info{
+        margin-top: 35px;
+    }
+    .btn_pack{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+        
+        
