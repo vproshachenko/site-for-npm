@@ -13,22 +13,22 @@ async function getResponce(){
         } else{
         pack.innerHTML +=`
         <div class="title">
-            <h2 class="name">${content.name}</h2>
-            <p class="desc">${content.description}</p>
+            <h2 class="name">${content.result.name}</h2>
+            <p class="desc">${content.result.description}</p>
             </div>
             <div class="info">
                 <div class="basic_info">
                     <div class="installing">
                     <img  class="icon" src="images/icons/icon-installing.png" alt="icon">
-                    <p class=" parag install">${content.downloads}</p>
+                    <p class=" parag install">${content.result.downloads}</p>
                     </div>
                     <div class="data-time">
                     <img class="icon" src="images/icons/icon-clock.png" alt="icon">
-                    <p class=" parag data">${content.date} </p>
+                    <p class=" parag data">${content.result.date} </p>
                     </div>
                 </div>
                 <div class="btn_pack">
-                    <a href="${content.link}" class="btn" target="_blank">Go to package</a>
+                    <a href="${content.result.link}" class="btn" target="_blank">Go to package</a>
                 </div>
             </div>
         `
